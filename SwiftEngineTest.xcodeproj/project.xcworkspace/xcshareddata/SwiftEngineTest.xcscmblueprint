@@ -1,0 +1,65 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "8F3F6B6797CB0C28038E77F1D0D1FEBF86001CF7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "686ABC7D4D16AC8C2BF9FA66CA941F6EB6F984F7" : 9223372036854775807,
+    "C70D4C238BB89033BE056031BB8C3F39CD4A5467" : 9223372036854775807,
+    "95AB4EFFE6F039B52B69D2C509315B8D3274BF78" : 9223372036854775807,
+    "07D38DC615E8ADA07E68B7DA8DD8A2654638A334" : 9223372036854775807,
+    "8C29C8B10D306DB83C6D839C40BDDF6D24A35DB6" : 9223372036854775807,
+    "6F592973CDAFC6396CA0DD0B7DAC14E5B55161D2" : 9223372036854775807,
+    "8F3F6B6797CB0C28038E77F1D0D1FEBF86001CF7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "E1175DE9-1924-4DD6-A7CF-2C46EC6CB27B",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "686ABC7D4D16AC8C2BF9FA66CA941F6EB6F984F7" : "SwiftEngineTest\/.build\/checkouts\/BSON.git--1864673809949788219\/",
+    "C70D4C238BB89033BE056031BB8C3F39CD4A5467" : "SwiftEngineTest\/.build\/checkouts\/Cheetah.git-9055844829175592006\/",
+    "95AB4EFFE6F039B52B69D2C509315B8D3274BF78" : "SwiftEngineTest\/.build\/checkouts\/KittenCore.git--4606738124728250479\/",
+    "07D38DC615E8ADA07E68B7DA8DD8A2654638A334" : "SwiftEngineTest\/.build\/checkouts\/CryptoKitten.git--986575072100638837\/",
+    "8C29C8B10D306DB83C6D839C40BDDF6D24A35DB6" : "SwiftEngineTest\/.build\/checkouts\/Schrodinger.git-3746374058425452560\/",
+    "6F592973CDAFC6396CA0DD0B7DAC14E5B55161D2" : "SwiftEngineTest\/.build\/checkouts\/MongoKitten.git--6244548337864045047\/",
+    "8F3F6B6797CB0C28038E77F1D0D1FEBF86001CF7" : "SwiftEngineTest\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SwiftEngineTest",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SwiftEngineTest.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/TimE\/Development\/SwiftEngineTest\/.build\/repositories\/CryptoKitten.git--986575072100638837",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "07D38DC615E8ADA07E68B7DA8DD8A2654638A334"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/TimE\/Development\/SwiftEngineTest\/.build\/repositories\/BSON.git--1864673809949788219",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "686ABC7D4D16AC8C2BF9FA66CA941F6EB6F984F7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/TimE\/Development\/SwiftEngineTest\/.build\/repositories\/MongoKitten.git--6244548337864045047",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "6F592973CDAFC6396CA0DD0B7DAC14E5B55161D2"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/TimE\/Development\/SwiftEngineTest\/.build\/repositories\/Schrodinger.git-3746374058425452560",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8C29C8B10D306DB83C6D839C40BDDF6D24A35DB6"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/TimE1211\/SwiftEngineTest.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "8F3F6B6797CB0C28038E77F1D0D1FEBF86001CF7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/TimE\/Development\/SwiftEngineTest\/.build\/repositories\/KittenCore.git--4606738124728250479",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "95AB4EFFE6F039B52B69D2C509315B8D3274BF78"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "\/Users\/TimE\/Development\/SwiftEngineTest\/.build\/repositories\/Cheetah.git-9055844829175592006",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C70D4C238BB89033BE056031BB8C3F39CD4A5467"
+    }
+  ]
+}
