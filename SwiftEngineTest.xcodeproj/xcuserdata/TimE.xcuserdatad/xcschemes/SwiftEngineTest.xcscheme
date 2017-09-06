@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "204AF3F41F607B7800662CA8"
-               BuildableName = "SwiftEngineTest.app"
+               BlueprintIdentifier = "OBJ_346"
+               BuildableName = "SwiftEngineTest.framework"
                BlueprintName = "SwiftEngineTest"
                ReferencedContainer = "container:SwiftEngineTest.xcodeproj">
             </BuildableReference>
@@ -32,8 +32,8 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "204AF3F41F607B7800662CA8"
-            BuildableName = "SwiftEngineTest.app"
+            BlueprintIdentifier = "OBJ_346"
+            BuildableName = "SwiftEngineTest.framework"
             BlueprintName = "SwiftEngineTest"
             ReferencedContainer = "container:SwiftEngineTest.xcodeproj">
          </BuildableReference>
@@ -55,8 +55,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "204AF3F41F607B7800662CA8"
-            BuildableName = "SwiftEngineTest.app"
+            BlueprintIdentifier = "OBJ_346"
+            BuildableName = "SwiftEngineTest.framework"
             BlueprintName = "SwiftEngineTest"
             ReferencedContainer = "container:SwiftEngineTest.xcodeproj">
          </BuildableReference>
@@ -74,8 +74,8 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "204AF3F41F607B7800662CA8"
-            BuildableName = "SwiftEngineTest.app"
+            BlueprintIdentifier = "OBJ_346"
+            BuildableName = "SwiftEngineTest.framework"
             BlueprintName = "SwiftEngineTest"
             ReferencedContainer = "container:SwiftEngineTest.xcodeproj">
          </BuildableReference>

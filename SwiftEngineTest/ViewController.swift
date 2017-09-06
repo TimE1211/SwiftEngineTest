@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MongoKitten
 
 class ViewController: UIViewController {
 

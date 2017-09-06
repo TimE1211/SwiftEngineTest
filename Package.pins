@@ -1,0 +1,42 @@
+{
+  "autoPin": true,
+  "pins": [
+    {
+      "package": "BSON",
+      "reason": null,
+      "repositoryURL": "https://github.com/OpenKitten/BSON.git",
+      "version": "5.1.4"
+    },
+    {
+      "package": "Cheetah",
+      "reason": null,
+      "repositoryURL": "https://github.com/OpenKitten/Cheetah.git",
+      "version": "1.0.3"
+    },
+    {
+      "package": "CryptoKitten",
+      "reason": null,
+      "repositoryURL": "https://github.com/OpenKitten/CryptoKitten.git",
+      "version": "0.2.3"
+    },
+    {
+      "package": "KittenCore",
+      "reason": null,
+      "repositoryURL": "https://github.com/OpenKitten/KittenCore.git",
+      "version": "0.2.3"
+    },
+    {
+      "package": "MongoKitten",
+      "reason": null,
+      "repositoryURL": "https://github.com/OpenKitten/MongoKitten.git",
+      "version": "4.0.14"
+    },
+    {
+      "package": "Schrodinger",
+      "reason": null,
+      "repositoryURL": "https://github.com/OpenKitten/Schrodinger.git",
+      "version": "1.0.1"
+    }
+  ],
+  "version": 1
+}

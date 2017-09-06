@@ -7,303 +7,2323 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		204AF3F91F607B7800662CA8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AF3F81F607B7800662CA8 /* AppDelegate.swift */; };
-		204AF3FB1F607B7800662CA8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 204AF3FA1F607B7800662CA8 /* ViewController.swift */; };
-		204AF3FE1F607B7800662CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204AF3FC1F607B7800662CA8 /* Main.storyboard */; };
-		204AF4001F607B7800662CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 204AF3FF1F607B7800662CA8 /* Assets.xcassets */; };
-		204AF4031F607B7800662CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 204AF4011F607B7800662CA8 /* LaunchScreen.storyboard */; };
+		OBJ_151 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_131 /* Core.swift */; };
+		OBJ_152 /* KittenString.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_132 /* KittenString.swift */; };
+		OBJ_153 /* NumberConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_133 /* NumberConversion.swift */; };
+		OBJ_160 /* BSONPrimitive.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_113 /* BSONPrimitive.swift */; };
+		OBJ_161 /* Decimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_114 /* Decimal.swift */; };
+		OBJ_162 /* Document+Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_115 /* Document+Conversion.swift */; };
+		OBJ_163 /* Document+Flattening.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_116 /* Document+Flattening.swift */; };
+		OBJ_164 /* Document+Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_117 /* Document+Operators.swift */; };
+		OBJ_165 /* Document+ParsingSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_118 /* Document+ParsingSupport.swift */; };
+		OBJ_166 /* Document+Subscripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_119 /* Document+Subscripts.swift */; };
+		OBJ_167 /* Document+Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_120 /* Document+Validation.swift */; };
+		OBJ_168 /* Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_121 /* Document.swift */; };
+		OBJ_169 /* EmbeddedDocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_122 /* EmbeddedDocuments.swift */; };
+		OBJ_170 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_123 /* Error.swift */; };
+		OBJ_171 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_124 /* Helpers.swift */; };
+		OBJ_172 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_125 /* Index.swift */; };
+		OBJ_173 /* Interpreting.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_126 /* Interpreting.swift */; };
+		OBJ_174 /* ObjectId.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_127 /* ObjectId.swift */; };
+		OBJ_175 /* Optional+BSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_128 /* Optional+BSON.swift */; };
+		OBJ_176 /* RegularExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_129 /* RegularExpression.swift */; };
+		OBJ_178 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_185 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_105 /* Array.swift */; };
+		OBJ_186 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_106 /* Helpers.swift */; };
+		OBJ_187 /* InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_107 /* InternalHelpers.swift */; };
+		OBJ_188 /* Object.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_108 /* Object.swift */; };
+		OBJ_189 /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_109 /* Parser.swift */; };
+		OBJ_190 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_110 /* Value.swift */; };
+		OBJ_192 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_199 /* Hash.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_94 /* Hash.swift */; };
+		OBJ_200 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_95 /* Helpers.swift */; };
+		OBJ_201 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_96 /* HMAC.swift */; };
+		OBJ_202 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_97 /* MD5.swift */; };
+		OBJ_203 /* PBKDF2_HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_98 /* PBKDF2_HMAC.swift */; };
+		OBJ_204 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_99 /* SHA1.swift */; };
+		OBJ_205 /* SHA2_32Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_100 /* SHA2_32Base.swift */; };
+		OBJ_206 /* SHA2_32Implementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_101 /* SHA2_32Implementations.swift */; };
+		OBJ_207 /* SHA2_64Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_102 /* SHA2_64Base.swift */; };
+		OBJ_208 /* SHA2_64Implementations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_103 /* SHA2_64Implementations.swift */; };
+		OBJ_215 /* Schrodinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_91 /* Schrodinger.swift */; };
+		OBJ_222 /* ExtendedJSON+EfficientSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* ExtendedJSON+EfficientSerialization.swift */; };
+		OBJ_223 /* ExtendedJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* ExtendedJSON.swift */; };
+		OBJ_225 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_226 /* BSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* BSON.framework */; };
+		OBJ_227 /* Cheetah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Cheetah.framework */; };
+		OBJ_228 /* CryptoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* CryptoKitten.framework */; };
+		OBJ_229 /* Schrodinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Schrodinger.framework */; };
+		OBJ_240 /* CoordinateReferenceSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* CoordinateReferenceSystem.swift */; };
+		OBJ_241 /* GeoJSONError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* GeoJSONError.swift */; };
+		OBJ_242 /* GeoJsonObjectType.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* GeoJsonObjectType.swift */; };
+		OBJ_243 /* LineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* LineString.swift */; };
+		OBJ_244 /* MultiLineString.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* MultiLineString.swift */; };
+		OBJ_245 /* MultiPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* MultiPoint.swift */; };
+		OBJ_246 /* MultiPolygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* MultiPolygon.swift */; };
+		OBJ_247 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* Point.swift */; };
+		OBJ_248 /* Polygon.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* Polygon.swift */; };
+		OBJ_249 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* Position.swift */; };
+		OBJ_250 /* ValueConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* ValueConvertible.swift */; };
+		OBJ_252 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_253 /* BSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* BSON.framework */; };
+		OBJ_254 /* Cheetah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Cheetah.framework */; };
+		OBJ_255 /* CryptoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* CryptoKitten.framework */; };
+		OBJ_256 /* Schrodinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Schrodinger.framework */; };
+		OBJ_267 /* Base64_temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* Base64_temp.swift */; };
+		OBJ_268 /* Database+Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* Database+Authentication.swift */; };
+		OBJ_269 /* SCRAM.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* SCRAM.swift */; };
+		OBJ_270 /* Collection+Administration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* Collection+Administration.swift */; };
+		OBJ_271 /* Collection+Geospatial.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* Collection+Geospatial.swift */; };
+		OBJ_272 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* Collection.swift */; };
+		OBJ_273 /* CollectionSlice.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* CollectionSlice.swift */; };
+		OBJ_274 /* Options.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Options.swift */; };
+		OBJ_275 /* CRUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_43 /* CRUD.swift */; };
+		OBJ_276 /* Database+Administration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Database+Administration.swift */; };
+		OBJ_277 /* Database+RoleManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Database+RoleManagement.swift */; };
+		OBJ_278 /* Database+UserManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Database+UserManagement.swift */; };
+		OBJ_279 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Database.swift */; };
+		OBJ_280 /* Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Deprecated.swift */; };
+		OBJ_281 /* HelpfulErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* HelpfulErrors.swift */; };
+		OBJ_282 /* MongoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* MongoError.swift */; };
+		OBJ_283 /* Bool+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Bool+String.swift */; };
+		OBJ_284 /* BuildInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* BuildInfo.swift */; };
+		OBJ_285 /* Concern.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* Concern.swift */; };
+		OBJ_286 /* DocumentHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* DocumentHelpers.swift */; };
+		OBJ_287 /* GeoNearOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* GeoNearOption.swift */; };
+		OBJ_288 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Helpers.swift */; };
+		OBJ_289 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* Logging.swift */; };
+		OBJ_290 /* SerializationHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* SerializationHelpers.swift */; };
+		OBJ_291 /* String+MongoKitten.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* String+MongoKitten.swift */; };
+		OBJ_292 /* ValueConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* ValueConvertible.swift */; };
+		OBJ_293 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* Flags.swift */; };
+		OBJ_294 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Message.swift */; };
+		OBJ_295 /* MongoDriverInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* MongoDriverInformation.swift */; };
+		OBJ_296 /* OperationCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* OperationCode.swift */; };
+		OBJ_297 /* Cursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* Cursor.swift */; };
+		OBJ_298 /* DBRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_72 /* DBRef.swift */; };
+		OBJ_299 /* Explain.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_73 /* Explain.swift */; };
+		OBJ_300 /* GridFS.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* GridFS.swift */; };
+		OBJ_301 /* Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Index.swift */; };
+		OBJ_302 /* PipelineBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_76 /* PipelineBuilder.swift */; };
+		OBJ_303 /* Projection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_77 /* Projection.swift */; };
+		OBJ_304 /* QueryBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_78 /* QueryBuilder.swift */; };
+		OBJ_305 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_79 /* Sort.swift */; };
+		OBJ_306 /* ClientSettings+URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_81 /* ClientSettings+URL.swift */; };
+		OBJ_307 /* ClientSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_82 /* ClientSettings.swift */; };
+		OBJ_308 /* Server.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_83 /* Server.swift */; };
+		OBJ_309 /* SSLSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_84 /* SSLSettings.swift */; };
+		OBJ_310 /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_86 /* Connection.swift */; };
+		OBJ_312 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_313 /* BSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* BSON.framework */; };
+		OBJ_314 /* Cheetah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Cheetah.framework */; };
+		OBJ_315 /* CryptoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* CryptoKitten.framework */; };
+		OBJ_316 /* Schrodinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Schrodinger.framework */; };
+		OBJ_317 /* GeoJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* GeoJSON.framework */; };
+		OBJ_318 /* MongoSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* MongoSocket.framework */; };
+		OBJ_319 /* ExtendedJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* ExtendedJSON.framework */; };
+		OBJ_333 /* MongoTCP.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_88 /* MongoTCP.swift */; };
+		OBJ_334 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_89 /* Socket.swift */; };
+		OBJ_336 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_337 /* BSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* BSON.framework */; };
+		OBJ_338 /* Cheetah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Cheetah.framework */; };
+		OBJ_339 /* CryptoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* CryptoKitten.framework */; };
+		OBJ_340 /* Schrodinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Schrodinger.framework */; };
+		OBJ_351 /* SwiftEngineTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_8 /* SwiftEngineTest.swift */; };
+		OBJ_353 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_354 /* BSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* BSON.framework */; };
+		OBJ_355 /* Cheetah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Cheetah.framework */; };
+		OBJ_356 /* CryptoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* CryptoKitten.framework */; };
+		OBJ_357 /* Schrodinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Schrodinger.framework */; };
+		OBJ_358 /* ExtendedJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* ExtendedJSON.framework */; };
+		OBJ_359 /* GeoJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* GeoJSON.framework */; };
+		OBJ_360 /* MongoSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* MongoSocket.framework */; };
+		OBJ_361 /* MongoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* MongoKitten.framework */; };
+		OBJ_376 /* SwiftEngineTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* SwiftEngineTestTests.swift */; };
+		OBJ_378 /* KittenCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_135 /* KittenCore.framework */; };
+		OBJ_379 /* BSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_136 /* BSON.framework */; };
+		OBJ_380 /* Cheetah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_137 /* Cheetah.framework */; };
+		OBJ_381 /* CryptoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_138 /* CryptoKitten.framework */; };
+		OBJ_382 /* Schrodinger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_139 /* Schrodinger.framework */; };
+		OBJ_383 /* ExtendedJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_140 /* ExtendedJSON.framework */; };
+		OBJ_384 /* GeoJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* GeoJSON.framework */; };
+		OBJ_385 /* MongoSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_143 /* MongoSocket.framework */; };
+		OBJ_386 /* MongoKitten.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_142 /* MongoKitten.framework */; };
+		OBJ_387 /* SwiftEngineTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_144 /* SwiftEngineTest.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		204AF40A1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF40B1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_155;
+			remoteInfo = BSON;
+		};
+		204AF40C1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF40D1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_180;
+			remoteInfo = Cheetah;
+		};
+		204AF40E1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF40F1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_194;
+			remoteInfo = CryptoKitten;
+		};
+		204AF4101F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_210;
+			remoteInfo = Schrodinger;
+		};
+		204AF4111F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_217;
+			remoteInfo = ExtendedJSON;
+		};
+		204AF4121F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF4131F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_155;
+			remoteInfo = BSON;
+		};
+		204AF4141F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_180;
+			remoteInfo = Cheetah;
+		};
+		204AF4151F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_194;
+			remoteInfo = CryptoKitten;
+		};
+		204AF4161F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_210;
+			remoteInfo = Schrodinger;
+		};
+		204AF4171F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_235;
+			remoteInfo = GeoJSON;
+		};
+		204AF4181F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF4191F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_155;
+			remoteInfo = BSON;
+		};
+		204AF41A1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_180;
+			remoteInfo = Cheetah;
+		};
+		204AF41B1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_194;
+			remoteInfo = CryptoKitten;
+		};
+		204AF41C1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_210;
+			remoteInfo = Schrodinger;
+		};
+		204AF41D1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_327;
+			remoteInfo = MongoSocket;
+		};
+		204AF41E1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF41F1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_155;
+			remoteInfo = BSON;
+		};
+		204AF4201F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_180;
+			remoteInfo = Cheetah;
+		};
+		204AF4211F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_194;
+			remoteInfo = CryptoKitten;
+		};
+		204AF4221F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_210;
+			remoteInfo = Schrodinger;
+		};
+		204AF4231F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_262;
+			remoteInfo = MongoKitten;
+		};
+		204AF4241F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF4251F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_155;
+			remoteInfo = BSON;
+		};
+		204AF4261F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_180;
+			remoteInfo = Cheetah;
+		};
+		204AF4271F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_194;
+			remoteInfo = CryptoKitten;
+		};
+		204AF4281F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_210;
+			remoteInfo = Schrodinger;
+		};
+		204AF4291F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_235;
+			remoteInfo = GeoJSON;
+		};
+		204AF42A1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_327;
+			remoteInfo = MongoSocket;
+		};
+		204AF42B1F60860400662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_217;
+			remoteInfo = ExtendedJSON;
+		};
+		204AF42C1F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_146;
+			remoteInfo = KittenCore;
+		};
+		204AF42D1F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_155;
+			remoteInfo = BSON;
+		};
+		204AF42E1F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_180;
+			remoteInfo = Cheetah;
+		};
+		204AF42F1F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_194;
+			remoteInfo = CryptoKitten;
+		};
+		204AF4301F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_210;
+			remoteInfo = Schrodinger;
+		};
+		204AF4311F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_217;
+			remoteInfo = ExtendedJSON;
+		};
+		204AF4321F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_235;
+			remoteInfo = GeoJSON;
+		};
+		204AF4331F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_327;
+			remoteInfo = MongoSocket;
+		};
+		204AF4341F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_262;
+			remoteInfo = MongoKitten;
+		};
+		204AF4351F60860500662CA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = OBJ_346;
+			remoteInfo = SwiftEngineTest;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		204AF3F51F607B7800662CA8 /* SwiftEngineTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftEngineTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		204AF3F81F607B7800662CA8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		204AF3FA1F607B7800662CA8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		204AF3FD1F607B7800662CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		204AF3FF1F607B7800662CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		204AF4021F607B7800662CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		204AF4041F607B7800662CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		OBJ_100 /* SHA2_32Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA2_32Base.swift; sourceTree = "<group>"; };
+		OBJ_101 /* SHA2_32Implementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA2_32Implementations.swift; sourceTree = "<group>"; };
+		OBJ_102 /* SHA2_64Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA2_64Base.swift; sourceTree = "<group>"; };
+		OBJ_103 /* SHA2_64Implementations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA2_64Implementations.swift; sourceTree = "<group>"; };
+		OBJ_105 /* Array.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
+		OBJ_106 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		OBJ_107 /* InternalHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalHelpers.swift; sourceTree = "<group>"; };
+		OBJ_108 /* Object.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Object.swift; sourceTree = "<group>"; };
+		OBJ_109 /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		OBJ_11 /* SwiftEngineTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEngineTestTests.swift; sourceTree = "<group>"; };
+		OBJ_110 /* Value.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
+		OBJ_113 /* BSONPrimitive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSONPrimitive.swift; sourceTree = "<group>"; };
+		OBJ_114 /* Decimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decimal.swift; sourceTree = "<group>"; };
+		OBJ_115 /* Document+Conversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+Conversion.swift"; sourceTree = "<group>"; };
+		OBJ_116 /* Document+Flattening.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+Flattening.swift"; sourceTree = "<group>"; };
+		OBJ_117 /* Document+Operators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+Operators.swift"; sourceTree = "<group>"; };
+		OBJ_118 /* Document+ParsingSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+ParsingSupport.swift"; sourceTree = "<group>"; };
+		OBJ_119 /* Document+Subscripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+Subscripts.swift"; sourceTree = "<group>"; };
+		OBJ_12 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = SOURCE_ROOT; };
+		OBJ_120 /* Document+Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+Validation.swift"; sourceTree = "<group>"; };
+		OBJ_121 /* Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Document.swift; sourceTree = "<group>"; };
+		OBJ_122 /* EmbeddedDocuments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmbeddedDocuments.swift; sourceTree = "<group>"; };
+		OBJ_123 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		OBJ_124 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		OBJ_125 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		OBJ_126 /* Interpreting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreting.swift; sourceTree = "<group>"; };
+		OBJ_127 /* ObjectId.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectId.swift; sourceTree = "<group>"; };
+		OBJ_128 /* Optional+BSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+BSON.swift"; sourceTree = "<group>"; };
+		OBJ_129 /* RegularExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegularExpression.swift; sourceTree = "<group>"; };
+		OBJ_13 /* SwiftEngineTest */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftEngineTest; sourceTree = SOURCE_ROOT; };
+		OBJ_131 /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		OBJ_132 /* KittenString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittenString.swift; sourceTree = "<group>"; };
+		OBJ_133 /* NumberConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberConversion.swift; sourceTree = "<group>"; };
+		OBJ_135 /* KittenCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KittenCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_136 /* BSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = BSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_137 /* Cheetah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Cheetah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_138 /* CryptoKitten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CryptoKitten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_139 /* Schrodinger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Schrodinger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_140 /* ExtendedJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ExtendedJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_141 /* GeoJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = GeoJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_142 /* MongoKitten.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MongoKitten.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_143 /* MongoSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MongoSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_144 /* SwiftEngineTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftEngineTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_145 /* SwiftEngineTestTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwiftEngineTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		OBJ_17 /* ExtendedJSON+EfficientSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ExtendedJSON+EfficientSerialization.swift"; sourceTree = "<group>"; };
+		OBJ_18 /* ExtendedJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedJSON.swift; sourceTree = "<group>"; };
+		OBJ_20 /* CoordinateReferenceSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateReferenceSystem.swift; sourceTree = "<group>"; };
+		OBJ_21 /* GeoJSONError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSONError.swift; sourceTree = "<group>"; };
+		OBJ_22 /* GeoJsonObjectType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJsonObjectType.swift; sourceTree = "<group>"; };
+		OBJ_23 /* LineString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LineString.swift; sourceTree = "<group>"; };
+		OBJ_24 /* MultiLineString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiLineString.swift; sourceTree = "<group>"; };
+		OBJ_25 /* MultiPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPoint.swift; sourceTree = "<group>"; };
+		OBJ_26 /* MultiPolygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPolygon.swift; sourceTree = "<group>"; };
+		OBJ_27 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		OBJ_28 /* Polygon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Polygon.swift; sourceTree = "<group>"; };
+		OBJ_29 /* Position.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		OBJ_30 /* ValueConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueConvertible.swift; sourceTree = "<group>"; };
+		OBJ_33 /* Base64_temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base64_temp.swift; sourceTree = "<group>"; };
+		OBJ_34 /* Database+Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Authentication.swift"; sourceTree = "<group>"; };
+		OBJ_35 /* SCRAM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRAM.swift; sourceTree = "<group>"; };
+		OBJ_37 /* Collection+Administration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Administration.swift"; sourceTree = "<group>"; };
+		OBJ_38 /* Collection+Geospatial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Geospatial.swift"; sourceTree = "<group>"; };
+		OBJ_39 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		OBJ_40 /* CollectionSlice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionSlice.swift; sourceTree = "<group>"; };
+		OBJ_41 /* Options.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Options.swift; sourceTree = "<group>"; };
+		OBJ_43 /* CRUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CRUD.swift; sourceTree = "<group>"; };
+		OBJ_45 /* Database+Administration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+Administration.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* Database+RoleManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+RoleManagement.swift"; sourceTree = "<group>"; };
+		OBJ_47 /* Database+UserManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Database+UserManagement.swift"; sourceTree = "<group>"; };
+		OBJ_48 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
+		OBJ_52 /* HelpfulErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpfulErrors.swift; sourceTree = "<group>"; };
+		OBJ_53 /* MongoError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoError.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Bool+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bool+String.swift"; sourceTree = "<group>"; };
+		OBJ_56 /* BuildInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildInfo.swift; sourceTree = "<group>"; };
+		OBJ_57 /* Concern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concern.swift; sourceTree = "<group>"; };
+		OBJ_58 /* DocumentHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentHelpers.swift; sourceTree = "<group>"; };
+		OBJ_59 /* GeoNearOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoNearOption.swift; sourceTree = "<group>"; };
+		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		OBJ_60 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		OBJ_61 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		OBJ_62 /* SerializationHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationHelpers.swift; sourceTree = "<group>"; };
+		OBJ_63 /* String+MongoKitten.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+MongoKitten.swift"; sourceTree = "<group>"; };
+		OBJ_64 /* ValueConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueConvertible.swift; sourceTree = "<group>"; };
+		OBJ_66 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		OBJ_67 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		OBJ_68 /* MongoDriverInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoDriverInformation.swift; sourceTree = "<group>"; };
+		OBJ_69 /* OperationCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperationCode.swift; sourceTree = "<group>"; };
+		OBJ_71 /* Cursor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cursor.swift; sourceTree = "<group>"; };
+		OBJ_72 /* DBRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBRef.swift; sourceTree = "<group>"; };
+		OBJ_73 /* Explain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Explain.swift; sourceTree = "<group>"; };
+		OBJ_74 /* GridFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridFS.swift; sourceTree = "<group>"; };
+		OBJ_75 /* Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Index.swift; sourceTree = "<group>"; };
+		OBJ_76 /* PipelineBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PipelineBuilder.swift; sourceTree = "<group>"; };
+		OBJ_77 /* Projection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Projection.swift; sourceTree = "<group>"; };
+		OBJ_78 /* QueryBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryBuilder.swift; sourceTree = "<group>"; };
+		OBJ_79 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
+		OBJ_8 /* SwiftEngineTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEngineTest.swift; sourceTree = "<group>"; };
+		OBJ_81 /* ClientSettings+URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ClientSettings+URL.swift"; sourceTree = "<group>"; };
+		OBJ_82 /* ClientSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientSettings.swift; sourceTree = "<group>"; };
+		OBJ_83 /* Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Server.swift; sourceTree = "<group>"; };
+		OBJ_84 /* SSLSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLSettings.swift; sourceTree = "<group>"; };
+		OBJ_86 /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		OBJ_88 /* MongoTCP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MongoTCP.swift; sourceTree = "<group>"; };
+		OBJ_89 /* Socket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Socket.swift; sourceTree = "<group>"; };
+		OBJ_91 /* Schrodinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schrodinger.swift; sourceTree = "<group>"; };
+		OBJ_94 /* Hash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hash.swift; sourceTree = "<group>"; };
+		OBJ_95 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
+		OBJ_96 /* HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		OBJ_97 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		OBJ_98 /* PBKDF2_HMAC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBKDF2_HMAC.swift; sourceTree = "<group>"; };
+		OBJ_99 /* SHA1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		204AF3F21F607B7800662CA8 /* Frameworks */ = {
+		OBJ_154 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_178 /* KittenCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_191 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_192 /* KittenCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_209 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_216 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_224 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_225 /* KittenCore.framework in Frameworks */,
+				OBJ_226 /* BSON.framework in Frameworks */,
+				OBJ_227 /* Cheetah.framework in Frameworks */,
+				OBJ_228 /* CryptoKitten.framework in Frameworks */,
+				OBJ_229 /* Schrodinger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_251 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_252 /* KittenCore.framework in Frameworks */,
+				OBJ_253 /* BSON.framework in Frameworks */,
+				OBJ_254 /* Cheetah.framework in Frameworks */,
+				OBJ_255 /* CryptoKitten.framework in Frameworks */,
+				OBJ_256 /* Schrodinger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_311 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_312 /* KittenCore.framework in Frameworks */,
+				OBJ_313 /* BSON.framework in Frameworks */,
+				OBJ_314 /* Cheetah.framework in Frameworks */,
+				OBJ_315 /* CryptoKitten.framework in Frameworks */,
+				OBJ_316 /* Schrodinger.framework in Frameworks */,
+				OBJ_317 /* GeoJSON.framework in Frameworks */,
+				OBJ_318 /* MongoSocket.framework in Frameworks */,
+				OBJ_319 /* ExtendedJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_335 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_336 /* KittenCore.framework in Frameworks */,
+				OBJ_337 /* BSON.framework in Frameworks */,
+				OBJ_338 /* Cheetah.framework in Frameworks */,
+				OBJ_339 /* CryptoKitten.framework in Frameworks */,
+				OBJ_340 /* Schrodinger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_352 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_353 /* KittenCore.framework in Frameworks */,
+				OBJ_354 /* BSON.framework in Frameworks */,
+				OBJ_355 /* Cheetah.framework in Frameworks */,
+				OBJ_356 /* CryptoKitten.framework in Frameworks */,
+				OBJ_357 /* Schrodinger.framework in Frameworks */,
+				OBJ_358 /* ExtendedJSON.framework in Frameworks */,
+				OBJ_359 /* GeoJSON.framework in Frameworks */,
+				OBJ_360 /* MongoSocket.framework in Frameworks */,
+				OBJ_361 /* MongoKitten.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_377 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_378 /* KittenCore.framework in Frameworks */,
+				OBJ_379 /* BSON.framework in Frameworks */,
+				OBJ_380 /* Cheetah.framework in Frameworks */,
+				OBJ_381 /* CryptoKitten.framework in Frameworks */,
+				OBJ_382 /* Schrodinger.framework in Frameworks */,
+				OBJ_383 /* ExtendedJSON.framework in Frameworks */,
+				OBJ_384 /* GeoJSON.framework in Frameworks */,
+				OBJ_385 /* MongoSocket.framework in Frameworks */,
+				OBJ_386 /* MongoKitten.framework in Frameworks */,
+				OBJ_387 /* SwiftEngineTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		204AF3EC1F607B7800662CA8 = {
+		OBJ_10 /* SwiftEngineTestTests */ = {
 			isa = PBXGroup;
 			children = (
-				204AF3F71F607B7800662CA8 /* SwiftEngineTest */,
-				204AF3F61F607B7800662CA8 /* Products */,
+				OBJ_11 /* SwiftEngineTestTests.swift */,
 			);
-			sourceTree = "<group>";
+			name = SwiftEngineTestTests;
+			path = Tests/SwiftEngineTestTests;
+			sourceTree = SOURCE_ROOT;
 		};
-		204AF3F61F607B7800662CA8 /* Products */ = {
+		OBJ_104 /* Cheetah 1.0.3 */ = {
 			isa = PBXGroup;
 			children = (
-				204AF3F51F607B7800662CA8 /* SwiftEngineTest.app */,
+				OBJ_105 /* Array.swift */,
+				OBJ_106 /* Helpers.swift */,
+				OBJ_107 /* InternalHelpers.swift */,
+				OBJ_108 /* Object.swift */,
+				OBJ_109 /* Parser.swift */,
+				OBJ_110 /* Value.swift */,
+			);
+			name = "Cheetah 1.0.3";
+			path = ".build/checkouts/Cheetah.git-9055844829175592006/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_111 /* BSON 5.1.4 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_112 /* BSON */,
+			);
+			name = "BSON 5.1.4";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_112 /* BSON */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_113 /* BSONPrimitive.swift */,
+				OBJ_114 /* Decimal.swift */,
+				OBJ_115 /* Document+Conversion.swift */,
+				OBJ_116 /* Document+Flattening.swift */,
+				OBJ_117 /* Document+Operators.swift */,
+				OBJ_118 /* Document+ParsingSupport.swift */,
+				OBJ_119 /* Document+Subscripts.swift */,
+				OBJ_120 /* Document+Validation.swift */,
+				OBJ_121 /* Document.swift */,
+				OBJ_122 /* EmbeddedDocuments.swift */,
+				OBJ_123 /* Error.swift */,
+				OBJ_124 /* Helpers.swift */,
+				OBJ_125 /* Index.swift */,
+				OBJ_126 /* Interpreting.swift */,
+				OBJ_127 /* ObjectId.swift */,
+				OBJ_128 /* Optional+BSON.swift */,
+				OBJ_129 /* RegularExpression.swift */,
+			);
+			name = BSON;
+			path = ".build/checkouts/BSON.git--1864673809949788219/Sources/BSON";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_130 /* KittenCore 0.2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_131 /* Core.swift */,
+				OBJ_132 /* KittenString.swift */,
+				OBJ_133 /* NumberConversion.swift */,
+			);
+			name = "KittenCore 0.2.3";
+			path = ".build/checkouts/KittenCore.git--4606738124728250479/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_134 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_135 /* KittenCore.framework */,
+				OBJ_136 /* BSON.framework */,
+				OBJ_137 /* Cheetah.framework */,
+				OBJ_138 /* CryptoKitten.framework */,
+				OBJ_139 /* Schrodinger.framework */,
+				OBJ_140 /* ExtendedJSON.framework */,
+				OBJ_141 /* GeoJSON.framework */,
+				OBJ_142 /* MongoKitten.framework */,
+				OBJ_143 /* MongoSocket.framework */,
+				OBJ_144 /* SwiftEngineTest.framework */,
+				OBJ_145 /* SwiftEngineTestTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		204AF3F71F607B7800662CA8 /* SwiftEngineTest */ = {
+		OBJ_14 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-				204AF3F81F607B7800662CA8 /* AppDelegate.swift */,
-				204AF3FA1F607B7800662CA8 /* ViewController.swift */,
-				204AF3FC1F607B7800662CA8 /* Main.storyboard */,
-				204AF3FF1F607B7800662CA8 /* Assets.xcassets */,
-				204AF4011F607B7800662CA8 /* LaunchScreen.storyboard */,
-				204AF4041F607B7800662CA8 /* Info.plist */,
+				OBJ_15 /* MongoKitten 4.0.14 */,
+				OBJ_90 /* Schrodinger 1.0.1 */,
+				OBJ_92 /* CryptoKitten 0.2.3 */,
+				OBJ_104 /* Cheetah 1.0.3 */,
+				OBJ_111 /* BSON 5.1.4 */,
+				OBJ_130 /* KittenCore 0.2.3 */,
 			);
-			path = SwiftEngineTest;
+			name = Dependencies;
 			sourceTree = "<group>";
+		};
+		OBJ_15 /* MongoKitten 4.0.14 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_16 /* ExtendedJSON */,
+				OBJ_19 /* GeoJSON */,
+				OBJ_31 /* MongoKitten */,
+				OBJ_87 /* MongoSocket */,
+			);
+			name = "MongoKitten 4.0.14";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_16 /* ExtendedJSON */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_17 /* ExtendedJSON+EfficientSerialization.swift */,
+				OBJ_18 /* ExtendedJSON.swift */,
+			);
+			name = ExtendedJSON;
+			path = ".build/checkouts/MongoKitten.git--6244548337864045047/Sources/ExtendedJSON";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_19 /* GeoJSON */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_20 /* CoordinateReferenceSystem.swift */,
+				OBJ_21 /* GeoJSONError.swift */,
+				OBJ_22 /* GeoJsonObjectType.swift */,
+				OBJ_23 /* LineString.swift */,
+				OBJ_24 /* MultiLineString.swift */,
+				OBJ_25 /* MultiPoint.swift */,
+				OBJ_26 /* MultiPolygon.swift */,
+				OBJ_27 /* Point.swift */,
+				OBJ_28 /* Polygon.swift */,
+				OBJ_29 /* Position.swift */,
+				OBJ_30 /* ValueConvertible.swift */,
+			);
+			name = GeoJSON;
+			path = ".build/checkouts/MongoKitten.git--6244548337864045047/Sources/GeoJSON";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_31 /* MongoKitten */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_32 /* Auth */,
+				OBJ_36 /* Collection */,
+				OBJ_42 /* CRUD */,
+				OBJ_44 /* Database */,
+				OBJ_49 /* Deprecated */,
+				OBJ_51 /* Error */,
+				OBJ_54 /* Helpers */,
+				OBJ_65 /* Internals */,
+				OBJ_70 /* Querying */,
+				OBJ_80 /* Server */,
+				OBJ_85 /* Socket */,
+			);
+			name = MongoKitten;
+			path = ".build/checkouts/MongoKitten.git--6244548337864045047/Sources/MongoKitten";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_32 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_33 /* Base64_temp.swift */,
+				OBJ_34 /* Database+Authentication.swift */,
+				OBJ_35 /* SCRAM.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		OBJ_36 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_37 /* Collection+Administration.swift */,
+				OBJ_38 /* Collection+Geospatial.swift */,
+				OBJ_39 /* Collection.swift */,
+				OBJ_40 /* CollectionSlice.swift */,
+				OBJ_41 /* Options.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		OBJ_42 /* CRUD */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_43 /* CRUD.swift */,
+			);
+			path = CRUD;
+			sourceTree = "<group>";
+		};
+		OBJ_44 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_45 /* Database+Administration.swift */,
+				OBJ_46 /* Database+RoleManagement.swift */,
+				OBJ_47 /* Database+UserManagement.swift */,
+				OBJ_48 /* Database.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		OBJ_49 /* Deprecated */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_50 /* Deprecated.swift */,
+			);
+			path = Deprecated;
+			sourceTree = "<group>";
+		};
+		OBJ_5 = {
+			isa = PBXGroup;
+			children = (
+				OBJ_6 /* Package.swift */,
+				OBJ_7 /* Sources */,
+				OBJ_9 /* Tests */,
+				OBJ_12 /* Pods */,
+				OBJ_13 /* SwiftEngineTest */,
+				OBJ_14 /* Dependencies */,
+				OBJ_134 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		OBJ_51 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_52 /* HelpfulErrors.swift */,
+				OBJ_53 /* MongoError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		OBJ_54 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_55 /* Bool+String.swift */,
+				OBJ_56 /* BuildInfo.swift */,
+				OBJ_57 /* Concern.swift */,
+				OBJ_58 /* DocumentHelpers.swift */,
+				OBJ_59 /* GeoNearOption.swift */,
+				OBJ_60 /* Helpers.swift */,
+				OBJ_61 /* Logging.swift */,
+				OBJ_62 /* SerializationHelpers.swift */,
+				OBJ_63 /* String+MongoKitten.swift */,
+				OBJ_64 /* ValueConvertible.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		OBJ_65 /* Internals */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_66 /* Flags.swift */,
+				OBJ_67 /* Message.swift */,
+				OBJ_68 /* MongoDriverInformation.swift */,
+				OBJ_69 /* OperationCode.swift */,
+			);
+			path = Internals;
+			sourceTree = "<group>";
+		};
+		OBJ_7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_8 /* SwiftEngineTest.swift */,
+			);
+			path = Sources;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_70 /* Querying */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_71 /* Cursor.swift */,
+				OBJ_72 /* DBRef.swift */,
+				OBJ_73 /* Explain.swift */,
+				OBJ_74 /* GridFS.swift */,
+				OBJ_75 /* Index.swift */,
+				OBJ_76 /* PipelineBuilder.swift */,
+				OBJ_77 /* Projection.swift */,
+				OBJ_78 /* QueryBuilder.swift */,
+				OBJ_79 /* Sort.swift */,
+			);
+			path = Querying;
+			sourceTree = "<group>";
+		};
+		OBJ_80 /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_81 /* ClientSettings+URL.swift */,
+				OBJ_82 /* ClientSettings.swift */,
+				OBJ_83 /* Server.swift */,
+				OBJ_84 /* SSLSettings.swift */,
+			);
+			path = Server;
+			sourceTree = "<group>";
+		};
+		OBJ_85 /* Socket */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_86 /* Connection.swift */,
+			);
+			path = Socket;
+			sourceTree = "<group>";
+		};
+		OBJ_87 /* MongoSocket */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_88 /* MongoTCP.swift */,
+				OBJ_89 /* Socket.swift */,
+			);
+			name = MongoSocket;
+			path = ".build/checkouts/MongoKitten.git--6244548337864045047/Sources/MongoSocket";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_9 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_10 /* SwiftEngineTestTests */,
+			);
+			name = Tests;
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_90 /* Schrodinger 1.0.1 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_91 /* Schrodinger.swift */,
+			);
+			name = "Schrodinger 1.0.1";
+			path = ".build/checkouts/Schrodinger.git-3746374058425452560/Sources";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_92 /* CryptoKitten 0.2.3 */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_93 /* CryptoKitten */,
+			);
+			name = "CryptoKitten 0.2.3";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_93 /* CryptoKitten */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_94 /* Hash.swift */,
+				OBJ_95 /* Helpers.swift */,
+				OBJ_96 /* HMAC.swift */,
+				OBJ_97 /* MD5.swift */,
+				OBJ_98 /* PBKDF2_HMAC.swift */,
+				OBJ_99 /* SHA1.swift */,
+				OBJ_100 /* SHA2_32Base.swift */,
+				OBJ_101 /* SHA2_32Implementations.swift */,
+				OBJ_102 /* SHA2_64Base.swift */,
+				OBJ_103 /* SHA2_64Implementations.swift */,
+			);
+			name = CryptoKitten;
+			path = ".build/checkouts/CryptoKitten.git--986575072100638837/Sources/CryptoKitten";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		204AF3F41F607B7800662CA8 /* SwiftEngineTest */ = {
+		OBJ_146 /* KittenCore */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 204AF4071F607B7800662CA8 /* Build configuration list for PBXNativeTarget "SwiftEngineTest" */;
+			buildConfigurationList = OBJ_147 /* Build configuration list for PBXNativeTarget "KittenCore" */;
 			buildPhases = (
-				204AF3F11F607B7800662CA8 /* Sources */,
-				204AF3F21F607B7800662CA8 /* Frameworks */,
-				204AF3F31F607B7800662CA8 /* Resources */,
+				OBJ_150 /* Sources */,
+				OBJ_154 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = KittenCore;
+			productName = KittenCore;
+			productReference = OBJ_135 /* KittenCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_155 /* BSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_156 /* Build configuration list for PBXNativeTarget "BSON" */;
+			buildPhases = (
+				OBJ_159 /* Sources */,
+				OBJ_177 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_179 /* PBXTargetDependency */,
+			);
+			name = BSON;
+			productName = BSON;
+			productReference = OBJ_136 /* BSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_180 /* Cheetah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_181 /* Build configuration list for PBXNativeTarget "Cheetah" */;
+			buildPhases = (
+				OBJ_184 /* Sources */,
+				OBJ_191 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_193 /* PBXTargetDependency */,
+			);
+			name = Cheetah;
+			productName = Cheetah;
+			productReference = OBJ_137 /* Cheetah.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_194 /* CryptoKitten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_195 /* Build configuration list for PBXNativeTarget "CryptoKitten" */;
+			buildPhases = (
+				OBJ_198 /* Sources */,
+				OBJ_209 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CryptoKitten;
+			productName = CryptoKitten;
+			productReference = OBJ_138 /* CryptoKitten.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_210 /* Schrodinger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_211 /* Build configuration list for PBXNativeTarget "Schrodinger" */;
+			buildPhases = (
+				OBJ_214 /* Sources */,
+				OBJ_216 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Schrodinger;
+			productName = Schrodinger;
+			productReference = OBJ_139 /* Schrodinger.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_217 /* ExtendedJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_218 /* Build configuration list for PBXNativeTarget "ExtendedJSON" */;
+			buildPhases = (
+				OBJ_221 /* Sources */,
+				OBJ_224 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_230 /* PBXTargetDependency */,
+				OBJ_231 /* PBXTargetDependency */,
+				OBJ_232 /* PBXTargetDependency */,
+				OBJ_233 /* PBXTargetDependency */,
+				OBJ_234 /* PBXTargetDependency */,
+			);
+			name = ExtendedJSON;
+			productName = ExtendedJSON;
+			productReference = OBJ_140 /* ExtendedJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_235 /* GeoJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_236 /* Build configuration list for PBXNativeTarget "GeoJSON" */;
+			buildPhases = (
+				OBJ_239 /* Sources */,
+				OBJ_251 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_257 /* PBXTargetDependency */,
+				OBJ_258 /* PBXTargetDependency */,
+				OBJ_259 /* PBXTargetDependency */,
+				OBJ_260 /* PBXTargetDependency */,
+				OBJ_261 /* PBXTargetDependency */,
+			);
+			name = GeoJSON;
+			productName = GeoJSON;
+			productReference = OBJ_141 /* GeoJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_262 /* MongoKitten */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_263 /* Build configuration list for PBXNativeTarget "MongoKitten" */;
+			buildPhases = (
+				OBJ_266 /* Sources */,
+				OBJ_311 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_320 /* PBXTargetDependency */,
+				OBJ_321 /* PBXTargetDependency */,
+				OBJ_322 /* PBXTargetDependency */,
+				OBJ_323 /* PBXTargetDependency */,
+				OBJ_324 /* PBXTargetDependency */,
+				OBJ_325 /* PBXTargetDependency */,
+				OBJ_326 /* PBXTargetDependency */,
+				OBJ_328 /* PBXTargetDependency */,
+			);
+			name = MongoKitten;
+			productName = MongoKitten;
+			productReference = OBJ_142 /* MongoKitten.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_327 /* MongoSocket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_329 /* Build configuration list for PBXNativeTarget "MongoSocket" */;
+			buildPhases = (
+				OBJ_332 /* Sources */,
+				OBJ_335 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_341 /* PBXTargetDependency */,
+				OBJ_342 /* PBXTargetDependency */,
+				OBJ_343 /* PBXTargetDependency */,
+				OBJ_344 /* PBXTargetDependency */,
+				OBJ_345 /* PBXTargetDependency */,
+			);
+			name = MongoSocket;
+			productName = MongoSocket;
+			productReference = OBJ_143 /* MongoSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_346 /* SwiftEngineTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_347 /* Build configuration list for PBXNativeTarget "SwiftEngineTest" */;
+			buildPhases = (
+				OBJ_350 /* Sources */,
+				OBJ_352 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_362 /* PBXTargetDependency */,
+				OBJ_363 /* PBXTargetDependency */,
+				OBJ_364 /* PBXTargetDependency */,
+				OBJ_365 /* PBXTargetDependency */,
+				OBJ_366 /* PBXTargetDependency */,
+				OBJ_367 /* PBXTargetDependency */,
+				OBJ_368 /* PBXTargetDependency */,
+				OBJ_369 /* PBXTargetDependency */,
+				OBJ_370 /* PBXTargetDependency */,
+			);
 			name = SwiftEngineTest;
 			productName = SwiftEngineTest;
-			productReference = 204AF3F51F607B7800662CA8 /* SwiftEngineTest.app */;
-			productType = "com.apple.product-type.application";
+			productReference = OBJ_144 /* SwiftEngineTest.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		OBJ_371 /* SwiftEngineTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_372 /* Build configuration list for PBXNativeTarget "SwiftEngineTestTests" */;
+			buildPhases = (
+				OBJ_375 /* Sources */,
+				OBJ_377 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				OBJ_388 /* PBXTargetDependency */,
+				OBJ_389 /* PBXTargetDependency */,
+				OBJ_390 /* PBXTargetDependency */,
+				OBJ_391 /* PBXTargetDependency */,
+				OBJ_392 /* PBXTargetDependency */,
+				OBJ_393 /* PBXTargetDependency */,
+				OBJ_394 /* PBXTargetDependency */,
+				OBJ_395 /* PBXTargetDependency */,
+				OBJ_396 /* PBXTargetDependency */,
+				OBJ_397 /* PBXTargetDependency */,
+			);
+			name = SwiftEngineTestTests;
+			productName = SwiftEngineTestTests;
+			productReference = OBJ_145 /* SwiftEngineTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		204AF3ED1F607B7800662CA8 /* Project object */ = {
+		OBJ_1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Timothy Hang";
-				TargetAttributes = {
-					204AF3F41F607B7800662CA8 = {
-						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 852TDXMVWN;
-						ProvisioningStyle = Automatic;
-					};
-				};
+				LastUpgradeCheck = 9999;
 			};
-			buildConfigurationList = 204AF3F01F607B7800662CA8 /* Build configuration list for PBXProject "SwiftEngineTest" */;
+			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "SwiftEngineTest" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 204AF3EC1F607B7800662CA8;
-			productRefGroup = 204AF3F61F607B7800662CA8 /* Products */;
+			mainGroup = OBJ_5;
+			productRefGroup = OBJ_134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				204AF3F41F607B7800662CA8 /* SwiftEngineTest */,
+				OBJ_146 /* KittenCore */,
+				OBJ_155 /* BSON */,
+				OBJ_180 /* Cheetah */,
+				OBJ_194 /* CryptoKitten */,
+				OBJ_210 /* Schrodinger */,
+				OBJ_217 /* ExtendedJSON */,
+				OBJ_235 /* GeoJSON */,
+				OBJ_262 /* MongoKitten */,
+				OBJ_327 /* MongoSocket */,
+				OBJ_346 /* SwiftEngineTest */,
+				OBJ_371 /* SwiftEngineTestTests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		204AF3F31F607B7800662CA8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
+/* Begin PBXSourcesBuildPhase section */
+		OBJ_150 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
 			files = (
-				204AF4031F607B7800662CA8 /* LaunchScreen.storyboard in Resources */,
-				204AF4001F607B7800662CA8 /* Assets.xcassets in Resources */,
-				204AF3FE1F607B7800662CA8 /* Main.storyboard in Resources */,
+				OBJ_151 /* Core.swift in Sources */,
+				OBJ_152 /* KittenString.swift in Sources */,
+				OBJ_153 /* NumberConversion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		204AF3F11F607B7800662CA8 /* Sources */ = {
+		OBJ_159 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 0;
 			files = (
-				204AF3FB1F607B7800662CA8 /* ViewController.swift in Sources */,
-				204AF3F91F607B7800662CA8 /* AppDelegate.swift in Sources */,
+				OBJ_160 /* BSONPrimitive.swift in Sources */,
+				OBJ_161 /* Decimal.swift in Sources */,
+				OBJ_162 /* Document+Conversion.swift in Sources */,
+				OBJ_163 /* Document+Flattening.swift in Sources */,
+				OBJ_164 /* Document+Operators.swift in Sources */,
+				OBJ_165 /* Document+ParsingSupport.swift in Sources */,
+				OBJ_166 /* Document+Subscripts.swift in Sources */,
+				OBJ_167 /* Document+Validation.swift in Sources */,
+				OBJ_168 /* Document.swift in Sources */,
+				OBJ_169 /* EmbeddedDocuments.swift in Sources */,
+				OBJ_170 /* Error.swift in Sources */,
+				OBJ_171 /* Helpers.swift in Sources */,
+				OBJ_172 /* Index.swift in Sources */,
+				OBJ_173 /* Interpreting.swift in Sources */,
+				OBJ_174 /* ObjectId.swift in Sources */,
+				OBJ_175 /* Optional+BSON.swift in Sources */,
+				OBJ_176 /* RegularExpression.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_184 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_185 /* Array.swift in Sources */,
+				OBJ_186 /* Helpers.swift in Sources */,
+				OBJ_187 /* InternalHelpers.swift in Sources */,
+				OBJ_188 /* Object.swift in Sources */,
+				OBJ_189 /* Parser.swift in Sources */,
+				OBJ_190 /* Value.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_199 /* Hash.swift in Sources */,
+				OBJ_200 /* Helpers.swift in Sources */,
+				OBJ_201 /* HMAC.swift in Sources */,
+				OBJ_202 /* MD5.swift in Sources */,
+				OBJ_203 /* PBKDF2_HMAC.swift in Sources */,
+				OBJ_204 /* SHA1.swift in Sources */,
+				OBJ_205 /* SHA2_32Base.swift in Sources */,
+				OBJ_206 /* SHA2_32Implementations.swift in Sources */,
+				OBJ_207 /* SHA2_64Base.swift in Sources */,
+				OBJ_208 /* SHA2_64Implementations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_215 /* Schrodinger.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_222 /* ExtendedJSON+EfficientSerialization.swift in Sources */,
+				OBJ_223 /* ExtendedJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_239 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_240 /* CoordinateReferenceSystem.swift in Sources */,
+				OBJ_241 /* GeoJSONError.swift in Sources */,
+				OBJ_242 /* GeoJsonObjectType.swift in Sources */,
+				OBJ_243 /* LineString.swift in Sources */,
+				OBJ_244 /* MultiLineString.swift in Sources */,
+				OBJ_245 /* MultiPoint.swift in Sources */,
+				OBJ_246 /* MultiPolygon.swift in Sources */,
+				OBJ_247 /* Point.swift in Sources */,
+				OBJ_248 /* Polygon.swift in Sources */,
+				OBJ_249 /* Position.swift in Sources */,
+				OBJ_250 /* ValueConvertible.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_266 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_267 /* Base64_temp.swift in Sources */,
+				OBJ_268 /* Database+Authentication.swift in Sources */,
+				OBJ_269 /* SCRAM.swift in Sources */,
+				OBJ_270 /* Collection+Administration.swift in Sources */,
+				OBJ_271 /* Collection+Geospatial.swift in Sources */,
+				OBJ_272 /* Collection.swift in Sources */,
+				OBJ_273 /* CollectionSlice.swift in Sources */,
+				OBJ_274 /* Options.swift in Sources */,
+				OBJ_275 /* CRUD.swift in Sources */,
+				OBJ_276 /* Database+Administration.swift in Sources */,
+				OBJ_277 /* Database+RoleManagement.swift in Sources */,
+				OBJ_278 /* Database+UserManagement.swift in Sources */,
+				OBJ_279 /* Database.swift in Sources */,
+				OBJ_280 /* Deprecated.swift in Sources */,
+				OBJ_281 /* HelpfulErrors.swift in Sources */,
+				OBJ_282 /* MongoError.swift in Sources */,
+				OBJ_283 /* Bool+String.swift in Sources */,
+				OBJ_284 /* BuildInfo.swift in Sources */,
+				OBJ_285 /* Concern.swift in Sources */,
+				OBJ_286 /* DocumentHelpers.swift in Sources */,
+				OBJ_287 /* GeoNearOption.swift in Sources */,
+				OBJ_288 /* Helpers.swift in Sources */,
+				OBJ_289 /* Logging.swift in Sources */,
+				OBJ_290 /* SerializationHelpers.swift in Sources */,
+				OBJ_291 /* String+MongoKitten.swift in Sources */,
+				OBJ_292 /* ValueConvertible.swift in Sources */,
+				OBJ_293 /* Flags.swift in Sources */,
+				OBJ_294 /* Message.swift in Sources */,
+				OBJ_295 /* MongoDriverInformation.swift in Sources */,
+				OBJ_296 /* OperationCode.swift in Sources */,
+				OBJ_297 /* Cursor.swift in Sources */,
+				OBJ_298 /* DBRef.swift in Sources */,
+				OBJ_299 /* Explain.swift in Sources */,
+				OBJ_300 /* GridFS.swift in Sources */,
+				OBJ_301 /* Index.swift in Sources */,
+				OBJ_302 /* PipelineBuilder.swift in Sources */,
+				OBJ_303 /* Projection.swift in Sources */,
+				OBJ_304 /* QueryBuilder.swift in Sources */,
+				OBJ_305 /* Sort.swift in Sources */,
+				OBJ_306 /* ClientSettings+URL.swift in Sources */,
+				OBJ_307 /* ClientSettings.swift in Sources */,
+				OBJ_308 /* Server.swift in Sources */,
+				OBJ_309 /* SSLSettings.swift in Sources */,
+				OBJ_310 /* Connection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_332 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_333 /* MongoTCP.swift in Sources */,
+				OBJ_334 /* Socket.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_351 /* SwiftEngineTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_376 /* SwiftEngineTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		204AF3FC1F607B7800662CA8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				204AF3FD1F607B7800662CA8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		OBJ_179 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF40C1F60860400662CA8 /* PBXContainerItemProxy */;
 		};
-		204AF4011F607B7800662CA8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				204AF4021F607B7800662CA8 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
+		OBJ_193 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF40E1F60860400662CA8 /* PBXContainerItemProxy */;
 		};
-/* End PBXVariantGroup section */
+		OBJ_230 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF4121F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_231 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_155 /* BSON */;
+			targetProxy = 204AF4131F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_232 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_180 /* Cheetah */;
+			targetProxy = 204AF4141F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_233 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_194 /* CryptoKitten */;
+			targetProxy = 204AF4151F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_234 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_210 /* Schrodinger */;
+			targetProxy = 204AF4161F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_257 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF4181F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_155 /* BSON */;
+			targetProxy = 204AF4191F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_259 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_180 /* Cheetah */;
+			targetProxy = 204AF41A1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_260 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_194 /* CryptoKitten */;
+			targetProxy = 204AF41B1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_261 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_210 /* Schrodinger */;
+			targetProxy = 204AF41C1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_320 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF4241F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_155 /* BSON */;
+			targetProxy = 204AF4251F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_322 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_180 /* Cheetah */;
+			targetProxy = 204AF4261F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_323 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_194 /* CryptoKitten */;
+			targetProxy = 204AF4271F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_210 /* Schrodinger */;
+			targetProxy = 204AF4281F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_235 /* GeoJSON */;
+			targetProxy = 204AF4291F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_326 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_327 /* MongoSocket */;
+			targetProxy = 204AF42A1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_328 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_217 /* ExtendedJSON */;
+			targetProxy = 204AF42B1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_341 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF41E1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_342 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_155 /* BSON */;
+			targetProxy = 204AF41F1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_343 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_180 /* Cheetah */;
+			targetProxy = 204AF4201F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_194 /* CryptoKitten */;
+			targetProxy = 204AF4211F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_345 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_210 /* Schrodinger */;
+			targetProxy = 204AF4221F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_362 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF40A1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_363 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_155 /* BSON */;
+			targetProxy = 204AF40B1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_180 /* Cheetah */;
+			targetProxy = 204AF40D1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_365 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_194 /* CryptoKitten */;
+			targetProxy = 204AF40F1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_366 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_210 /* Schrodinger */;
+			targetProxy = 204AF4101F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_217 /* ExtendedJSON */;
+			targetProxy = 204AF4111F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_368 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_235 /* GeoJSON */;
+			targetProxy = 204AF4171F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_369 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_327 /* MongoSocket */;
+			targetProxy = 204AF41D1F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_370 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_262 /* MongoKitten */;
+			targetProxy = 204AF4231F60860400662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_388 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_146 /* KittenCore */;
+			targetProxy = 204AF42C1F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_389 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_155 /* BSON */;
+			targetProxy = 204AF42D1F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_390 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_180 /* Cheetah */;
+			targetProxy = 204AF42E1F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_391 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_194 /* CryptoKitten */;
+			targetProxy = 204AF42F1F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_392 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_210 /* Schrodinger */;
+			targetProxy = 204AF4301F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_393 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_217 /* ExtendedJSON */;
+			targetProxy = 204AF4311F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_394 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_235 /* GeoJSON */;
+			targetProxy = 204AF4321F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_327 /* MongoSocket */;
+			targetProxy = 204AF4331F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_396 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_262 /* MongoKitten */;
+			targetProxy = 204AF4341F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+		OBJ_397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = OBJ_346 /* SwiftEngineTest */;
+			targetProxy = 204AF4351F60860500662CA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		204AF4051F607B7800662CA8 /* Debug */ = {
+		OBJ_148 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/KittenCore_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KittenCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = KittenCore;
 			};
 			name = Debug;
 		};
-		204AF4061F607B7800662CA8 /* Release */ = {
+		OBJ_149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				VALIDATE_PRODUCT = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/KittenCore_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = KittenCore;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = KittenCore;
 			};
 			name = Release;
 		};
-		204AF4081F607B7800662CA8 /* Debug */ = {
+		OBJ_157 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 852TDXMVWN;
-				INFOPLIST_FILE = SwiftEngineTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.SwiftEngineTest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/BSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = BSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = BSON;
 			};
 			name = Debug;
 		};
-		204AF4091F607B7800662CA8 /* Release */ = {
+		OBJ_158 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 852TDXMVWN;
-				INFOPLIST_FILE = SwiftEngineTest/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.SwiftEngineTest;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/BSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = BSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = BSON;
+			};
+			name = Release;
+		};
+		OBJ_182 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/Cheetah_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Cheetah;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Cheetah;
+			};
+			name = Debug;
+		};
+		OBJ_183 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/Cheetah_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Cheetah;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Cheetah;
+			};
+			name = Release;
+		};
+		OBJ_196 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/CryptoKitten_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CryptoKitten;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CryptoKitten;
+			};
+			name = Debug;
+		};
+		OBJ_197 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/CryptoKitten_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = CryptoKitten;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = CryptoKitten;
+			};
+			name = Release;
+		};
+		OBJ_212 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/Schrodinger_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Schrodinger;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Schrodinger;
+			};
+			name = Debug;
+		};
+		OBJ_213 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/Schrodinger_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = Schrodinger;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = Schrodinger;
+			};
+			name = Release;
+		};
+		OBJ_219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/ExtendedJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ExtendedJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = ExtendedJSON;
+			};
+			name = Debug;
+		};
+		OBJ_220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/ExtendedJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = ExtendedJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = ExtendedJSON;
+			};
+			name = Release;
+		};
+		OBJ_237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/GeoJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GeoJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = GeoJSON;
+			};
+			name = Debug;
+		};
+		OBJ_238 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/GeoJSON_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = GeoJSON;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = GeoJSON;
+			};
+			name = Release;
+		};
+		OBJ_264 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/MongoKitten_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MongoKitten;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = MongoKitten;
+			};
+			name = Debug;
+		};
+		OBJ_265 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/MongoKitten_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MongoKitten;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = MongoKitten;
+			};
+			name = Release;
+		};
+		OBJ_3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
+			};
+			name = Debug;
+		};
+		OBJ_330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/MongoSocket_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MongoSocket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = MongoSocket;
+			};
+			name = Debug;
+		};
+		OBJ_331 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/MongoSocket_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = MongoSocket;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = MongoSocket;
+			};
+			name = Release;
+		};
+		OBJ_348 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/SwiftEngineTest_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftEngineTest;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = SwiftEngineTest;
+			};
+			name = Debug;
+		};
+		OBJ_349 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/SwiftEngineTest_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = SwiftEngineTest;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGET_NAME = SwiftEngineTest;
+			};
+			name = Release;
+		};
+		OBJ_373 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/SwiftEngineTestTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = SwiftEngineTestTests;
+			};
+			name = Debug;
+		};
+		OBJ_374 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = SwiftEngineTest.xcodeproj/SwiftEngineTestTests_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/../Frameworks @loader_path/Frameworks";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				TARGET_NAME = SwiftEngineTestTests;
+			};
+			name = Release;
+		};
+		OBJ_4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_OPTIMIZATION_LEVEL = s;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				OTHER_SWIFT_FLAGS = "-DXcode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = SWIFT_PACKAGE;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				USE_HEADERMAP = NO;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		204AF3F01F607B7800662CA8 /* Build configuration list for PBXProject "SwiftEngineTest" */ = {
+		OBJ_147 /* Build configuration list for PBXNativeTarget "KittenCore" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				204AF4051F607B7800662CA8 /* Debug */,
-				204AF4061F607B7800662CA8 /* Release */,
+				OBJ_148 /* Debug */,
+				OBJ_149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
-		204AF4071F607B7800662CA8 /* Build configuration list for PBXNativeTarget "SwiftEngineTest" */ = {
+		OBJ_156 /* Build configuration list for PBXNativeTarget "BSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				204AF4081F607B7800662CA8 /* Debug */,
-				204AF4091F607B7800662CA8 /* Release */,
+				OBJ_157 /* Debug */,
+				OBJ_158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_181 /* Build configuration list for PBXNativeTarget "Cheetah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_182 /* Debug */,
+				OBJ_183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_195 /* Build configuration list for PBXNativeTarget "CryptoKitten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_196 /* Debug */,
+				OBJ_197 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_2 /* Build configuration list for PBXProject "SwiftEngineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_3 /* Debug */,
+				OBJ_4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_211 /* Build configuration list for PBXNativeTarget "Schrodinger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_212 /* Debug */,
+				OBJ_213 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_218 /* Build configuration list for PBXNativeTarget "ExtendedJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_219 /* Debug */,
+				OBJ_220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_236 /* Build configuration list for PBXNativeTarget "GeoJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_237 /* Debug */,
+				OBJ_238 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_263 /* Build configuration list for PBXNativeTarget "MongoKitten" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_264 /* Debug */,
+				OBJ_265 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_329 /* Build configuration list for PBXNativeTarget "MongoSocket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_330 /* Debug */,
+				OBJ_331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_347 /* Build configuration list for PBXNativeTarget "SwiftEngineTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_348 /* Debug */,
+				OBJ_349 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		OBJ_372 /* Build configuration list for PBXNativeTarget "SwiftEngineTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_373 /* Debug */,
+				OBJ_374 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 204AF3ED1F607B7800662CA8 /* Project object */;
+	rootObject = OBJ_1 /* Project object */;
 }
